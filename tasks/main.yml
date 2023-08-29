@@ -23,7 +23,7 @@
 
 - name: Sign public key
   uri:
-    url: "{{ hc_vault_server }}/v1/ssh-signer/sign/ansible-role"
+    url: "{{ hc_vault_server }}/v1/ssh-client-signer/sign/my-role"
     validate_certs: no
     method: POST
     headers:
