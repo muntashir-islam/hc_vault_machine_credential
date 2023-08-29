@@ -22,7 +22,7 @@
   run_once: true
 - name: Read private key 
   set_fact: 
-    temp_public_key: "{{ lookup('file', r_tempfile.path + '/id_rsa') }} "
+    temp_private_key: "{{ lookup('file', r_tempfile.path + '/id_rsa') }} "
   delegate_to: localhost
   run_once: true
 
